@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "6f710802-26e9-4cdd-b6a6-791e9f0cb2db",
+		"name": "Belts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32907872"
+	},
+	"item": [
+		{
+			"name": "Create Belt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Belt 1\",\r\n    \"version\" : \"version 1\",\r\n    \"price\" : 10000,\r\n    \"charge\" : \"HW\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/belts/patients/65f215928c5f17c29ed39bc2/belts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"belts",
+						"patients",
+						"65f215928c5f17c29ed39bc2",
+						"belts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Belt for specific patient",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Belts",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Belt for specific patient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/belts/patients/65f215928c5f17c29ed39bc2/belts/660c0203c55fa0b54ab6f5ee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"belts",
+						"patients",
+						"65f215928c5f17c29ed39bc2",
+						"belts",
+						"660c0203c55fa0b54ab6f5ee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update belt for specific patient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Belt 3\",\r\n    \"version\" : \"version 3\",\r\n    \"price\" : 12000,\r\n    \"charge\" : \"HW\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/belts/patients/65f215928c5f17c29ed39bc2/belts/660c0345c55fa0b54ab6f5f6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"belts",
+						"patients",
+						"65f215928c5f17c29ed39bc2",
+						"belts",
+						"660c0345c55fa0b54ab6f5f6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

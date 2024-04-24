@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "8e362d21-4497-4b39-9e2a-e279aca82426",
+		"name": "Patient Settings",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32907872"
+	},
+	"item": [
+		{
+			"name": "Update Account Information",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjI1NTZmN2E1YmI2MmFlYzAxNzM0OGMiLCJpYXQiOjE3MTM3MjQ5ODEsImV4cCI6MTcyMTUwMDk4MX0.8MEWlR4GXdVW8ze46yhite1_ODKNreUwDa0UPQLO0ug",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "MohamedHassan",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "currentPassword",
+							"value": "hasaa123_HB$#",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "newPassword",
+							"value": "hasaa123_HB$#?",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "profileImg",
+							"type": "file",
+							"src": "/D:/Basant/1680624483778.jpg",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/settings/updateAccountInformation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"settings",
+						"updateAccountInformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Privacy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjI1NTZmN2E1YmI2MmFlYzAxNzM0OGMiLCJpYXQiOjE3MTM3MjU5NDgsImV4cCI6MTcyMTUwMTk0OH0.5yEQQLHVGCbqpMRK3y4GBjzBuP5lqMO7HTTusQqpM4s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjE0NGZlODg5MTQxNGY4YmRiZjdlYWUiLCJpYXQiOjE3MTMwOTgwODcsImV4cCI6MTcyMDg3NDA4N30.oW1s2o07zdtoy2XKYkqJSlUGx3o1RlNkMSuXkKIW4T4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"mayarsaeyyy@gmail.com\",\r\n    \"countryCode\" : \"20\",\r\n    \"mobileNumber\": \"01223276064\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/settings/updatePrivacy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"settings",
+						"updatePrivacy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Me",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Privacy",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account Information",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "ee4d10f8-7f66-43dd-b5b5-62779735205a",
+		"name": "Medical Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32907872"
+	},
+	"item": [
+		{
+			"name": "uploadMedicalTest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "medicalTestName",
+							"value": "medical test 7",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/Nodejs Books/Developing Microservices with Node.js.May.2016.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/65ef4485fe3e6179c7df04c0/uploadtests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"65ef4485fe3e6179c7df04c0",
+						"uploadtests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete MedicalTest",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/65ef4485fe3e6179c7df04c0/medicaltests/65f501abea2fc9878d3ad724",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"65ef4485fe3e6179c7df04c0",
+						"medicaltests",
+						"65f501abea2fc9878d3ad724"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update MedicalTest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/65f215928c5f17c29ed39bc2/medicaltests/65f5ebd91e05bed46b4deb02",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"65f215928c5f17c29ed39bc2",
+						"medicaltests",
+						"65f5ebd91e05bed46b4deb02"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all MedicalTests",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Medicaltest",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
