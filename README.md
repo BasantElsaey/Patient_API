@@ -1,1 +1,2 @@
 # Patient_API
+This project is a Back-End API designed to manage and track patients undergoing dialysis treatment. Built using Node.js and Express.js, the API provides secure and efficient management of patient data, including their medical details, treatment schedules, and other critical information. The project utilizes a MongoDB database for storing patient records, ensuring scalability and flexibility in data handling. This system enables healthcare providers to monitor patient health metrics and treatment progress effectively.
