@@ -9,8 +9,7 @@ This project is a **Back-End API** specifically designed for managing and tracki
 - **Medical Data Management**: Includes storing and retrieving test results, prescriptions, and other medical data.
 - **Secure Authentication**: API endpoints are protected with user authentication to ensure secure access.
 - **RESTful Architecture**: Designed with a RESTful approach, making it easy to integrate with other healthcare systems.
-- **Multer**: Middleware for handling image uploads in Node.js.
-
+  
 ## Technologies Used
 
 - **Node.js**: JavaScript runtime environment for building scalable back-end applications.
@@ -18,6 +17,8 @@ This project is a **Back-End API** specifically designed for managing and tracki
 - **MongoDB**: NoSQL database used to store patient and treatment data.
 - **JWT Authentication**: JSON Web Tokens used for securing API routes.
 - **Mongoose**: ODM (Object Data Modeling) library for MongoDB, used for defining data models.
+- **Multer**: Middleware for handling image uploads in Node.js.
+
 
 ## Installation 
 ```bash
